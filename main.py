@@ -5,7 +5,7 @@ class Asiento:
         self.registro = registro
 
     def cambiarColor(self, color):
-        if(col in ["rojo", "verde", "amarillo", "negro", "blanco"]):
+        if(color in ["rojo", "verde", "amarillo", "negro", "blanco"]):
             self.color = color
         else:
             print("Color no disponible")
@@ -27,7 +27,7 @@ class Auto:
                 k += 1
         return k
 
-    def verificarIntegridar(self):
+    def verificarIntegridad(self):
         for i in self.asientos:
             if(i == null):
                 pass
