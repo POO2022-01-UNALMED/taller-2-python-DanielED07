@@ -31,10 +31,11 @@ class Auto:
         for i in self.asientos:
             if(i == None):
                 pass
-            elif(i.registro != self.registro | i.registro != self.motor.registro | self.registro != self.motor.registro):
-                return "Las piezas no son originales"
             else:
-                return "Auto original"
+                if(i.registro != self.registro | i.registro != self.motor.registro | self.registro != self.motor.registro):
+                    return "Las piezas no son originales"
+
+        return "Auto original"
 
 
 class Motor:
